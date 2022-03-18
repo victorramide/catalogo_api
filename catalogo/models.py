@@ -1,8 +1,6 @@
 from django.db import models
 from django.forms import CharField
 
-# Create your models here.
-
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=50)
