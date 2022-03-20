@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from catalogo.models import Livro
-from catalogo.serializer import LivroSerializer
+from apps.catalogo.models import Livro
+from apps.catalogo.serializer import LivroSerializer
 
 
 class LivrosViewSet(viewsets.ModelViewSet):

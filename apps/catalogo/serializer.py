@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from catalogo.models import Livro
+from apps.catalogo.models import Livro
 
 
 class LivroSerializer(serializers.ModelSerializer):
