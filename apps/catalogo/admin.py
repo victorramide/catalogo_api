@@ -1,6 +1,6 @@
 from re import search
 from django.contrib import admin
-from catalogo.models import Livro
+from apps.catalogo.models import Livro
 
 
 class Livros(admin.ModelAdmin):
