@@ -1,13 +1,14 @@
 from datetime import datetime
+from re import A
 from tkinter import CASCADE
 from django.db import models
-from django.forms import CharField
+from apps.autor.models import Autor
 
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=50)
-    autores = models.ForeignKey(
-        'autor.Autor', on_delete=models.CASCADE, related_name='autor')
+    autor = models.ForeignKey(
+        Autor, on_delete=models.CASCADE)
     isbn = models.CharField(max_length=10)
     quantidade_de_paginas = models.DecimalField(
         max_digits=5, decimal_places=0)
